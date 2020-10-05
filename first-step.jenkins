@@ -9,7 +9,7 @@ pipeline {
     }
     options {
         buildDiscarder(logRotator(numToKeepStr: '10', artifactNumToKeepStrr: '10'))
-        timestapm()
+        timestamps()
         }
     stages {
         stage("step1") {
